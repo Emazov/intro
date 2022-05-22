@@ -6,6 +6,12 @@
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
+body{
+    background-image: url("../img/bgc.jpg") ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -189,6 +195,49 @@ a, a:hover{
 
 
 /*  --------------  CONTENT SECTION  --------------  */
+.content{
+    padding: 0 12%;
+    margin: 100px 0;
+}
+.content-comment{
+    border: 1px solid;
+    margin-bottom: 100px;
+    padding: 2rem 4rem;
+}
+
+.content-comment-title{
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem 10rem;
+}
+
+.content-comment-like{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment-user{
+    display: flex;
+    align-items: center;
+}
+
+.comment-user h4{
+    font-size: 2rem;
+}
+
+.comment-user span img{
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.comment-like{
+    font-size: 4rem;
+}
 
 .wrapp{
     display: flex;
@@ -205,7 +254,7 @@ a, a:hover{
 }
 
 .content h2{
-    margin: 50px 0;
+    margin: 100px 0 50px;
 }
 
 .content .content-text,
@@ -221,17 +270,17 @@ a, a:hover{
 /*  --------------  FOOTER SECTION  --------------  */
 
 .footer{
-    padding: 1rem;
-    font-size: 1.5rem;
     color: #fff;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
     background-color: #4070f4;
     box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-
 }
-
+.credit{
+    padding: 5rem 0;
+    font-size: 1.5rem;
+}
 
 
 @media (max-width: 768px) {
@@ -240,5 +289,10 @@ a, a:hover{
     }
     .bottom-navbar, .header-top {
         display: block;
+    }
+    .content-comment-title{
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem ;
     }
 }
