@@ -1,3 +1,5 @@
+
+
 :root {
     --black: #444;
     --light-color: #666;
@@ -47,7 +49,7 @@ section {
     padding: 5rem 9%;
 }
 
-.wrap{
+.trend-wrap{
     margin-bottom: 50px;
 }
 
@@ -129,6 +131,22 @@ a, a:hover{
     display: none;
     box-shadow: 0 0 10px rgb(0 0 0 / 10%);
 }
+
+.header-logo{
+    font-size: 4rem;
+}
+
+.header-top-content{
+    text-transform: uppercase;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+.header-logo-content{
+    font-size: 4rem;
+}
+
 .bottom-navbar{
     background-color: #fff;
     position: fixed;
@@ -162,7 +180,7 @@ a, a:hover{
     height: 90%;
 }
 
-.trending-slider .content{
+.trending-slider .trend-content{
     padding: .5rem;
     font-size: 2rem;
 }
@@ -235,11 +253,13 @@ a, a:hover{
     margin-left: 10px;
 }
 
-.comment-like{
+.content-comment-like .fa-heart{
     font-size: 4rem;
+    cursor: pointer;
 }
 
-.wrapp{
+
+.content-wrap{
     display: flex;
     justify-content: center;
 }
